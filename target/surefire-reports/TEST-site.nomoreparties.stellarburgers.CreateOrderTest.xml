@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="site.nomoreparties.stellarburgers.CreateOrderTest" time="5.761" tests="4" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/test-classes:/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/classes:/Users/anna/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/anna/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/anna/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/anna/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/anna/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/anna/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/anna/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/anna/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/anna/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/anna/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/anna/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/anna/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/anna/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/anna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-junit4/2.15.0/allure-junit4-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-java-commons/2.15.0/allure-java-commons-2.15.0.jar:/Users/anna/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-model/2.15.0/allure-model-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-rest-assured/2.15.0/allure-rest-assured-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-attachments/2.15.0/allure-attachments-2.15.0.jar:/Users/anna/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="/Users/anna/Library/Java/JavaVirtualMachines/corretto-17.0.3/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/surefire/surefirebooter10625879728760636250.jar /Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/surefire 2022-09-25T15-24-05_402-jvmRun1 surefire2739851405826762316tmp surefire_016771558089013188010tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/test-classes:/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/classes:/Users/anna/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/anna/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/anna/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/anna/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/anna/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/anna/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/anna/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/anna/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/anna/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/anna/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/anna/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/anna/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/anna/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/anna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-junit4/2.15.0/allure-junit4-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-java-commons/2.15.0/allure-java-commons-2.15.0.jar:/Users/anna/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-model/2.15.0/allure-model-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-rest-assured/2.15.0/allure-rest-assured-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-attachments/2.15.0/allure-attachments-2.15.0.jar:/Users/anna/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:"/>
+    <property name="allure.results.directory" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/allure-results"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/anna"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-19"/>
+    <property name="java.home" value="/Users/anna/Library/Java/JavaVirtualMachines/corretto-17.0.3/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/surefire/surefirebooter10625879728760636250.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.3+6-LTS"/>
+    <property name="user.name" value="anna"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.3.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-17.0.3.6.1"/>
+    <property name="localRepository" value="/Users/anna/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-17/issues/"/>
+    <property name="java.io.tmpdir" value="/var/folders/15/yn5kq6y17t1_lngxqkrvmbpc0000gn/T/"/>
+    <property name="idea.version" value="2022.1.1"/>
+    <property name="java.version" value="17.0.3"/>
+    <property name="user.dir" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/anna/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="17.0.3+6-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="createOrderWithValidIngredientsTest" classname="site.nomoreparties.stellarburgers.CreateOrderTest" time="1.595"/>
+  <testcase name="createOrderWithoutAuthorizationTest" classname="site.nomoreparties.stellarburgers.CreateOrderTest" time="1.041">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;401&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <401> but was <200>.
+
+	at site.nomoreparties.stellarburgers.CreateOrderTest.createOrderWithoutAuthorizationTest(CreateOrderTest.java:104)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "a195@ya.ru",
+    "password": "12345",
+    "name": "Anna",
+    "success": null,
+    "user": null,
+    "accessToken": null,
+    "refreshToken": null,
+    "message": null
+}
+HTTP/1.1 429 Too Many Requests
+Date: Sun, 25 Sep 2022 12:24:13 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=lvi7b61br1LDz4W5SUFw0bNn2CuOrwM3MCCqG%2B6qka7UOWSRKp9nwHLQyi7fsgG8HXC9HzM9MTlHR6vhEKUvt5CbzwhoTnniMmfVwq91FS8BX1%2BJDmrV8m9YIQFbNMw4Vj2XsbkjdiXVpDvLVNmlPmtYZ3s%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7503bc4c6b25e8ff-MXP
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+<html>
+  <head>
+    <title>429 Too Many Requests</title>
+  </head>
+  <body>
+    <center>
+      <h1>429 Too Many Requests</h1>
+    </center>
+    <hr/>
+    <center>nginx/1.18.0 (Ubuntu)</center>
+  </body>
+</html>
+Request method:	GET
+Request URI:	https://stellarburgers.nomoreparties.site/api/ingredients
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 25 Sep 2022 12:24:13 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"1745-LHZ7D8kBZWcbCGljCoPXtjB5CeA"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=B0IR8Adh%2BC8iV%2FFdb9Qjf9j5IPsGb8rtsZ8%2F%2FT4qLTQbPVmkHB01NpBp1ISgll25NxEDzZ0ZBuIhHaDq5LguVWpXZAUGIUS4%2B6ZIZBsFnnXtiRgZRL4H%2B4k5bXouzT6lcjBmraG%2B9jkWablqw6%2F8UHzpCy4%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7503bc4eefeaf937-MXP
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "success": true,
+    "data": [
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6d",
+            "name": "Флюоресцентная булка R2-D3",
+            "type": "bun",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6f",
+            "name": "Мясо бессмертных моллюсков Protostomia",
+            "type": "main",
+            "proteins": 433,
+            "fat": 244,
+            "carbohydrates": 33,
+            "calories": 420,
+            "price": 1337,
+            "image": "https://code.s3.yandex.net/react/code/meat-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa70",
+            "name": "Говяжий метеорит (отбивная)",
+            "type": "main",
+            "proteins": 800,
+            "fat": 800,
+            "carbohydrates": 300,
+            "calories": 2674,
+            "price": 3000,
+            "image": "https://code.s3.yandex.net/react/code/meat-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa71",
+            "name": "Биокотлета из марсианской Магнолии",
+            "type": "main",
+            "proteins": 420,
+            "fat": 142,
+            "carbohydrates": 242,
+            "calories": 4242,
+            "price": 424,
+            "image": "https://code.s3.yandex.net/react/code/meat-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa72",
+            "name": "Соус Spicy-X",
+            "type": "sauce",
+            "proteins": 30,
+            "fat": 20,
+            "carbohydrates": 40,
+            "calories": 30,
+            "price": 90,
+            "image": "https://code.s3.yandex.net/react/code/sauce-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6e",
+            "name": "Филе Люминесцентного тетраодонтимформа",
+            "type": "main",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/meat-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa73",
+            "name": "Соус фирменный Space Sauce",
+            "type": "sauce",
+            "proteins": 50,
+            "fat": 22,
+            "carbohydrates": 11,
+            "calories": 14,
+            "price": 80,
+            "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa74",
+            "name": "Соус традиционный галактический",
+            "type": "sauce",
+            "proteins": 42,
+            "fat": 24,
+            "carbohydrates": 42,
+            "calories": 99,
+            "price": 15,
+            "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6c",
+            "name": "Краторная булка N-200i",
+            "type": "bun",
+            "proteins": 80,
+            "fat": 24,
+            "carbohydrates": 53,
+            "calories": 420,
+            "price": 1255,
+            "image": "https://code.s3.yandex.net/react/code/bun-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa75",
+            "name": "Соус с шипами Антарианского плоскоходца",
+            "type": "sauce",
+            "proteins": 101,
+            "fat": 99,
+            "carbohydrates": 100,
+            "calories": 100,
+            "price": 88,
+            "image": "https://code.s3.yandex.net/react/code/sauce-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa76",
+            "name": "Хрустящие минеральные кольца",
+            "type": "main",
+            "proteins": 808,
+            "fat": 689,
+            "carbohydrates": 609,
+            "calories": 986,
+            "price": 300,
+            "image": "https://code.s3.yandex.net/react/code/mineral_rings.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/mineral_rings-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/mineral_rings-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa77",
+            "name": "Плоды Фалленианского дерева",
+            "type": "main",
+            "proteins": 20,
+            "fat": 5,
+            "carbohydrates": 55,
+            "calories": 77,
+            "price": 874,
+            "image": "https://code.s3.yandex.net/react/code/sp_1.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sp_1-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sp_1-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa78",
+            "name": "Кристаллы марсианских альфа-сахаридов",
+            "type": "main",
+            "proteins": 234,
+            "fat": 432,
+            "carbohydrates": 111,
+            "calories": 189,
+            "price": 762,
+            "image": "https://code.s3.yandex.net/react/code/core.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa79",
+            "name": "Мини-салат Экзо-Плантаго",
+            "type": "main",
+            "proteins": 1,
+            "fat": 2,
+            "carbohydrates": 3,
+            "calories": 6,
+            "price": 4400,
+            "image": "https://code.s3.yandex.net/react/code/salad.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/salad-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/salad-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa7a",
+            "name": "Сыр с астероидной плесенью",
+            "type": "main",
+            "proteins": 84,
+            "fat": 48,
+            "carbohydrates": 420,
+            "calories": 3377,
+            "price": 4142,
+            "image": "https://code.s3.yandex.net/react/code/cheese.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/cheese-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/cheese-large.png",
+            "__v": 0
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "61c0c5a71d1f82001bdaaa6d",
+        "61c0c5a71d1f82001bdaaa6f"
+    ],
+    "name": null,
+    "order": null,
+    "number": null,
+    "success": null,
+    "message": null,
+    "data": [
+        
+    ]
+}
+HTTP/1.1 200 OK
+Date: Sun, 25 Sep 2022 12:24:14 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"72-kRQHIKC/nItWuNtDfkaV2ccsP2Y"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0J5h%2FtMGdCF7XoRAZsnH%2Bsl9wE%2BxV5CnrtpJrGqc3I3efxjEF3z2NaO4S%2B9BxXZRWdizjvRFbPnLgvkmR6nh37slNUpce2WzQ8NMWMTcQLIci1O2yfdbNw6PsRGcLVpDYR4qUmS9Z9TDWMmt9s6dxpA8Lcw%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7503bc50dda483b4-MXP
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "success": true,
+    "name": "Флюоресцентный бессмертный бургер",
+    "order": {
+        "number": 9162
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createOrderWithInvalidIngredientTest" classname="site.nomoreparties.stellarburgers.CreateOrderTest" time="1.608">
+    <failure message="1 expectation failed.&#10;Expected content-type &quot;*/*; charset=utf-8&quot; doesn&apos;t match actual content-type &quot;text/html; charset=utf-8&quot;.&#10;" type="java.lang.AssertionError">java.lang.AssertionError: 
+1 expectation failed.
+Expected content-type "*/*; charset=utf-8" doesn't match actual content-type "text/html; charset=utf-8".
+
+	at site.nomoreparties.stellarburgers.CreateOrderTest.createOrderWithInvalidIngredientTest(CreateOrderTest.java:68)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "a85@ya.ru",
+    "password": "12345",
+    "name": "Anna",
+    "success": null,
+    "user": null,
+    "accessToken": null,
+    "refreshToken": null,
+    "message": null
+}
+HTTP/1.1 200 OK
+Date: Sun, 25 Sep 2022 12:24:14 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzA0ODZlYzE2MWRhMDAxYjc2OGY2YiIsImlhdCI6MTY2NDEwODY1NCwiZXhwIjoxNjY0MTA5ODU0fQ.jXqZNC0fuhdXLlU_pxrFhfLRM9qLFN5uMRK7DYyhvG8
+ETag: W/"160-LK+4IK8JwXwxmLP+HxVWPnrkX6g"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sMDWA3wyTVxEQahQhDbUdT1tErwSwZF3Whm7fFABqQu7OiXnaacsYmkTFTGAvOkCkz97lSxD5G%2BiBWEeGXtC3mfywO6sWLGKUr8yjp%2B5jklHg8uBbbOaQ0GjfIxCYa8niKtBphm5Q%2FIZt7ihKQNHFjnc8A8%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7503bc52faddd60c-MXP
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "success": true,
+    "user": {
+        "email": "a85@ya.ru",
+        "name": "Anna"
+    },
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzA0ODZlYzE2MWRhMDAxYjc2OGY2YiIsImlhdCI6MTY2NDEwODY1NCwiZXhwIjoxNjY0MTA5ODU0fQ.jXqZNC0fuhdXLlU_pxrFhfLRM9qLFN5uMRK7DYyhvG8",
+    "refreshToken": "6ad30dd9ab33d46ad8e3d6987557d5ef2f7c5fdce79f1ab0ce7dd2d2b5a81d8c4a4061dd77f0ec76"
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/auth/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "a85@ya.ru",
+    "password": "12345",
+    "name": "Anna",
+    "success": null,
+    "user": null,
+    "accessToken": null,
+    "refreshToken": null,
+    "message": null
+}
+HTTP/1.1 200 OK
+Date: Sun, 25 Sep 2022 12:24:15 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"160-vODVPvhOj6+pRWa53oO8VZLoRXQ"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ldjAVKQ8zsBTotmn0E95EFrFkPmJGWVrtXCbVC7dB1dnUE2OVnG%2FcqVMbzEqNh1yK0WjVp0hX%2BidrLRNHAwRyBkVIfPLOcMlWQ5lusasdMIOZPbk3kiIJHMIW1z3WhQw%2FlSZudq7n3Syqm2U81jrf0oqIZs%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7503bc564a840f56-MXP
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "success": true,
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzA0ODZlYzE2MWRhMDAxYjc2OGY2YiIsImlhdCI6MTY2NDEwODY1NSwiZXhwIjoxNjY0MTA5ODU1fQ.XlqS_mVGbGOUAwYqNenEUVd1nS83gvPFF5xZ3wGZ-PE",
+    "refreshToken": "56297a86e698142e40e5aabc0c90ef4ddcbd3b1fa91d887d489f44a39540679e443f406bb2860bbd",
+    "user": {
+        "email": "a85@ya.ru",
+        "name": "Anna"
+    }
+}
+Request method:	GET
+Request URI:	https://stellarburgers.nomoreparties.site/api/ingredients
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 25 Sep 2022 12:24:15 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+ETag: W/"1745-LHZ7D8kBZWcbCGljCoPXtjB5CeA"
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=A1rGew%2FrZmbMw6AL%2B3nZCrpVNowwiJKFbHaO%2BkdhJRFfMRJeHDAP2zUlZeSxlDKo6wE3RWxuIGBqdu9Q%2Bzst9cC6%2F0LGCv%2FNoFSGzi0QvvFiF%2BKhaN7b0pm%2Fw3pp6O0s61eA3k68SHExl4IrWDNwigNwkqI%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7503bc58edb4bb19-MXP
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "success": true,
+    "data": [
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6d",
+            "name": "Флюоресцентная булка R2-D3",
+            "type": "bun",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/bun-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6f",
+            "name": "Мясо бессмертных моллюсков Protostomia",
+            "type": "main",
+            "proteins": 433,
+            "fat": 244,
+            "carbohydrates": 33,
+            "calories": 420,
+            "price": 1337,
+            "image": "https://code.s3.yandex.net/react/code/meat-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa70",
+            "name": "Говяжий метеорит (отбивная)",
+            "type": "main",
+            "proteins": 800,
+            "fat": 800,
+            "carbohydrates": 300,
+            "calories": 2674,
+            "price": 3000,
+            "image": "https://code.s3.yandex.net/react/code/meat-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa71",
+            "name": "Биокотлета из марсианской Магнолии",
+            "type": "main",
+            "proteins": 420,
+            "fat": 142,
+            "carbohydrates": 242,
+            "calories": 4242,
+            "price": 424,
+            "image": "https://code.s3.yandex.net/react/code/meat-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa72",
+            "name": "Соус Spicy-X",
+            "type": "sauce",
+            "proteins": 30,
+            "fat": 20,
+            "carbohydrates": 40,
+            "calories": 30,
+            "price": 90,
+            "image": "https://code.s3.yandex.net/react/code/sauce-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6e",
+            "name": "Филе Люминесцентного тетраодонтимформа",
+            "type": "main",
+            "proteins": 44,
+            "fat": 26,
+            "carbohydrates": 85,
+            "calories": 643,
+            "price": 988,
+            "image": "https://code.s3.yandex.net/react/code/meat-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/meat-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/meat-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa73",
+            "name": "Соус фирменный Space Sauce",
+            "type": "sauce",
+            "proteins": 50,
+            "fat": 22,
+            "carbohydrates": 11,
+            "calories": 14,
+            "price": 80,
+            "image": "https://code.s3.yandex.net/react/code/sauce-04.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-04-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-04-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa74",
+            "name": "Соус традиционный галактический",
+            "type": "sauce",
+            "proteins": 42,
+            "fat": 24,
+            "carbohydrates": 42,
+            "calories": 99,
+            "price": 15,
+            "image": "https://code.s3.yandex.net/react/code/sauce-03.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-03-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-03-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa6c",
+            "name": "Краторная булка N-200i",
+            "type": "bun",
+            "proteins": 80,
+            "fat": 24,
+            "carbohydrates": 53,
+            "calories": 420,
+            "price": 1255,
+            "image": "https://code.s3.yandex.net/react/code/bun-02.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/bun-02-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/bun-02-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa75",
+            "name": "Соус с шипами Антарианского плоскоходца",
+            "type": "sauce",
+            "proteins": 101,
+            "fat": 99,
+            "carbohydrates": 100,
+            "calories": 100,
+            "price": 88,
+            "image": "https://code.s3.yandex.net/react/code/sauce-01.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sauce-01-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sauce-01-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa76",
+            "name": "Хрустящие минеральные кольца",
+            "type": "main",
+            "proteins": 808,
+            "fat": 689,
+            "carbohydrates": 609,
+            "calories": 986,
+            "price": 300,
+            "image": "https://code.s3.yandex.net/react/code/mineral_rings.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/mineral_rings-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/mineral_rings-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa77",
+            "name": "Плоды Фалленианского дерева",
+            "type": "main",
+            "proteins": 20,
+            "fat": 5,
+            "carbohydrates": 55,
+            "calories": 77,
+            "price": 874,
+            "image": "https://code.s3.yandex.net/react/code/sp_1.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/sp_1-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/sp_1-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa78",
+            "name": "Кристаллы марсианских альфа-сахаридов",
+            "type": "main",
+            "proteins": 234,
+            "fat": 432,
+            "carbohydrates": 111,
+            "calories": 189,
+            "price": 762,
+            "image": "https://code.s3.yandex.net/react/code/core.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/core-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/core-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa79",
+            "name": "Мини-салат Экзо-Плантаго",
+            "type": "main",
+            "proteins": 1,
+            "fat": 2,
+            "carbohydrates": 3,
+            "calories": 6,
+            "price": 4400,
+            "image": "https://code.s3.yandex.net/react/code/salad.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/salad-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/salad-large.png",
+            "__v": 0
+        },
+        {
+            "_id": "61c0c5a71d1f82001bdaaa7a",
+            "name": "Сыр с астероидной плесенью",
+            "type": "main",
+            "proteins": 84,
+            "fat": 48,
+            "carbohydrates": 420,
+            "calories": 3377,
+            "price": 4142,
+            "image": "https://code.s3.yandex.net/react/code/cheese.png",
+            "image_mobile": "https://code.s3.yandex.net/react/code/cheese-mobile.png",
+            "image_large": "https://code.s3.yandex.net/react/code/cheese-large.png",
+            "__v": 0
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://stellarburgers.nomoreparties.site/api/orders
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "ingredients": [
+        "Myid"
+    ],
+    "name": null,
+    "order": null,
+    "number": null,
+    "success": null,
+    "message": null,
+    "data": [
+        
+    ]
+}
+HTTP/1.1 500 Internal Server Error
+Date: Sun, 25 Sep 2022 12:24:15 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Content-Security-Policy: default-src 'none'
+X-Content-Type-Options: nosniff
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MQNf2NyBLS7S%2Bnc61lGzeRg6p8GUrmP9JXg7hK37HSxahULE1gApElSbAxBn8Qz5sjDo4Px%2B7YW7H%2FgRfmJFs8k9mbBwlZfPHR%2FyWFzON7RS3hIsNcAySh7srLZiD685V%2FMXtMXaE3Vj6ZVr3zNNiGGRhvY%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7503bc5ade38bad6-MXP
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Internal Server Error</pre>
+  </body>
+</html>
+]]></system-out>
+  </testcase>
+  <testcase name="createOrderWithoutIngredientsTest" classname="site.nomoreparties.stellarburgers.CreateOrderTest" time="1.501"/>
+</testsuite>

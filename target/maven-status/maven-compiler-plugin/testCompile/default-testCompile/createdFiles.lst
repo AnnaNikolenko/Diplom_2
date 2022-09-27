@@ -1,0 +1,5 @@
+site/nomoreparties/stellarburgers/AuthorizationUserTest.class
+site/nomoreparties/stellarburgers/UpdateUserDataWithoutAuthorizationTest.class
+site/nomoreparties/stellarburgers/UpdateUserDataAfterAuthorizationTest.class
+site/nomoreparties/stellarburgers/CreateOrderTest.class
+site/nomoreparties/stellarburgers/CreateUserTest.class
