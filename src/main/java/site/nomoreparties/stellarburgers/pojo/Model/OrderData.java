@@ -28,55 +28,27 @@ public class OrderData {
     public List<String> getIngredients() {
         return ingredients;
     }
-
-    public void setIngredients(List<String> ingredients) {
-        this.ingredients = ingredients;
-    }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public Order getOrder() {
         return order;
     }
-
-    public void setOrder(Order order) {
-        this.order = order;
-    }
-
     public Order getNumber() {
         return number;
     }
-
-    public void setNumber(Order number) {
-        this.number = number;
-    }
-
     public Boolean getSuccess() {
         return success;
     }
-
-    public void setSuccess(Boolean success) {
-        this.success = success;
-    }
-
     public String getMessage() {
         return message;
     }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
-
     public List<Data> getData() {
         return data;
     }
-
     public void setData(List<Data> data) {
         this.data = data;
     }

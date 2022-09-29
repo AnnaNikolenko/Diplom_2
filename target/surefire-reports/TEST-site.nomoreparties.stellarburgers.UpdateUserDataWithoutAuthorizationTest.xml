@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="site.nomoreparties.stellarburgers.UpdateUserDataWithoutAuthorizationTest" time="4.841" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="site.nomoreparties.stellarburgers.UpdateUserDataWithoutAuthorizationTest" time="4.703" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/test-classes:/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/classes:/Users/anna/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/anna/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/anna/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/anna/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/anna/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/anna/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/anna/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/anna/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/anna/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/anna/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/anna/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/anna/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/anna/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/anna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-junit4/2.15.0/allure-junit4-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-java-commons/2.15.0/allure-java-commons-2.15.0.jar:/Users/anna/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-model/2.15.0/allure-model-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-rest-assured/2.15.0/allure-rest-assured-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-attachments/2.15.0/allure-attachments-2.15.0.jar:/Users/anna/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:"/>
+    <property name="java.class.path" value="/Users/anna/Desktop/Diplom_Anna_Nikolenko_09/Diplom_2/target/test-classes:/Users/anna/Desktop/Diplom_Anna_Nikolenko_09/Diplom_2/target/classes:/Users/anna/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/anna/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/anna/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/anna/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/anna/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/anna/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/anna/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/anna/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/anna/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/anna/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/anna/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/anna/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/anna/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/anna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-junit4/2.15.0/allure-junit4-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-java-commons/2.15.0/allure-java-commons-2.15.0.jar:/Users/anna/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-model/2.15.0/allure-model-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-rest-assured/2.15.0/allure-rest-assured-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-attachments/2.15.0/allure-attachments-2.15.0.jar:/Users/anna/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:"/>
     <property name="java.vm.vendor" value="Amazon.com Inc."/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
@@ -12,11 +12,11 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="/Users/anna/Library/Java/JavaVirtualMachines/corretto-17.0.3/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/surefire/surefirebooter10625879728760636250.jar /Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/surefire 2022-09-25T15-24-05_402-jvmRun1 surefire2739851405826762316tmp surefire_016771558089013188010tmp"/>
+    <property name="sun.java.command" value="/Users/anna/Desktop/Diplom_Anna_Nikolenko_09/Diplom_2/target/surefire/surefirebooter15840172949960054328.jar /Users/anna/Desktop/Diplom_Anna_Nikolenko_09/Diplom_2/target/surefire 2022-09-29T17-47-14_040-jvmRun1 surefire11763969293799727457tmp surefire_01731533859167039716tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/test-classes:/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/classes:/Users/anna/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/anna/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/anna/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/anna/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/anna/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/anna/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/anna/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/anna/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/anna/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/anna/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/anna/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/anna/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/anna/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/anna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-junit4/2.15.0/allure-junit4-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-java-commons/2.15.0/allure-java-commons-2.15.0.jar:/Users/anna/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-model/2.15.0/allure-model-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-rest-assured/2.15.0/allure-rest-assured-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-attachments/2.15.0/allure-attachments-2.15.0.jar:/Users/anna/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:"/>
-    <property name="allure.results.directory" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/allure-results"/>
+    <property name="surefire.test.class.path" value="/Users/anna/Desktop/Diplom_Anna_Nikolenko_09/Diplom_2/target/test-classes:/Users/anna/Desktop/Diplom_Anna_Nikolenko_09/Diplom_2/target/classes:/Users/anna/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/anna/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/anna/.m2/repository/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy/3.0.8/groovy-3.0.8.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.8/groovy-xml-3.0.8.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/anna/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/anna/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/anna/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/anna/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/anna/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/anna/.m2/repository/io/rest-assured/json-path/4.4.0/json-path-4.4.0.jar:/Users/anna/.m2/repository/org/codehaus/groovy/groovy-json/3.0.8/groovy-json-3.0.8.jar:/Users/anna/.m2/repository/io/rest-assured/rest-assured-common/4.4.0/rest-assured-common-4.4.0.jar:/Users/anna/.m2/repository/io/rest-assured/xml-path/4.4.0/xml-path-4.4.0.jar:/Users/anna/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/anna/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/anna/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/anna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-junit4/2.15.0/allure-junit4-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-java-commons/2.15.0/allure-java-commons-2.15.0.jar:/Users/anna/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-model/2.15.0/allure-model-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-rest-assured/2.15.0/allure-rest-assured-2.15.0.jar:/Users/anna/.m2/repository/io/qameta/allure/allure-attachments/2.15.0/allure-attachments-2.15.0.jar:/Users/anna/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.0/jackson-databind-2.13.0.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.0/jackson-annotations-2.13.0.jar:/Users/anna/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.13.0/jackson-core-2.13.0.jar:"/>
+    <property name="allure.results.directory" value="/Users/anna/Desktop/Diplom_Anna_Nikolenko_09/Diplom_2/target/allure-results"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/anna"/>
     <property name="user.language" value="ru"/>
@@ -24,12 +24,12 @@
     <property name="java.version.date" value="2022-04-19"/>
     <property name="java.home" value="/Users/anna/Library/Java/JavaVirtualMachines/corretto-17.0.3/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2"/>
+    <property name="basedir" value="/Users/anna/Desktop/Diplom_Anna_Nikolenko_09/Diplom_2"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2/target/surefire/surefirebooter10625879728760636250.jar"/>
+    <property name="surefire.real.class.path" value="/Users/anna/Desktop/Diplom_Anna_Nikolenko_09/Diplom_2/target/surefire/surefirebooter15840172949960054328.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.3+6-LTS"/>
@@ -45,7 +45,7 @@
     <property name="java.io.tmpdir" value="/var/folders/15/yn5kq6y17t1_lngxqkrvmbpc0000gn/T/"/>
     <property name="idea.version" value="2022.1.1"/>
     <property name="java.version" value="17.0.3"/>
-    <property name="user.dir" value="/Users/anna/Desktop/мои файлы/DIPLOM/Diplom_2"/>
+    <property name="user.dir" value="/Users/anna/Desktop/Diplom_Anna_Nikolenko_09/Diplom_2"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -57,12 +57,12 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="updateUserDataWithoutAuthorizationTest" classname="site.nomoreparties.stellarburgers.UpdateUserDataWithoutAuthorizationTest" time="4.65">
+  <testcase name="updateUserDataWithoutAuthorizationTest" classname="site.nomoreparties.stellarburgers.UpdateUserDataWithoutAuthorizationTest" time="4.521">
     <failure message="1 expectation failed.&#10;Expected status code &lt;401&gt; but was &lt;200&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
 1 expectation failed.
 Expected status code <401> but was <200>.
 
-	at site.nomoreparties.stellarburgers.UpdateUserDataWithoutAuthorizationTest.updateUserDataWithoutAuthorizationTest(UpdateUserDataWithoutAuthorizationTest.java:50)
+	at site.nomoreparties.stellarburgers.UpdateUserDataWithoutAuthorizationTest.updateUserDataWithoutAuthorizationTest(UpdateUserDataWithoutAuthorizationTest.java:51)
 ]]></failure>
     <system-out><![CDATA[Request method:	POST
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/register
@@ -77,7 +77,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "a361@ya.ru",
+    "email": "56@ya.ru",
     "password": "12345",
     "name": "Anna",
     "success": null,
@@ -87,30 +87,30 @@ Body:
     "message": null
 }
 HTTP/1.1 200 OK
-Date: Sun, 25 Sep 2022 12:24:10 GMT
+Date: Thu, 29 Sep 2022 14:47:18 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzA0ODZhYzE2MWRhMDAxYjc2OGY2NiIsImlhdCI6MTY2NDEwODY1MCwiZXhwIjoxNjY0MTA5ODUwfQ.5yFThpTMM39VOYIRpQx_QBnOqxPLMMtrL4dj2hY5GEE
-ETag: W/"161-kGFIWQ5fsEwtjnhDzITV07qn2uo"
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzVhZmY2YzE2MWRhMDAxYjc2YWE5YiIsImlhdCI6MTY2NDQ2MjgzOCwiZXhwIjoxNjY0NDY0MDM4fQ.GYAFuW2Jh2BzmkI7hbNBwXkboBNU2MuigS8cYYK7W98
+ETag: W/"15f-FJwJ3poWDyc8je++aq1aBE6OuEE"
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OoUi1mVSgR8B4lcdRMnS2FZzSbRJaxPb00gVJpizQmOgNyWHix2o%2Bq1bEBRD0pHxSb5ucYOzAjCYRR2SZnU7Vrv2bdEsZ%2Brphy%2Fjrr6NX4WC6Tz%2BxNdYnNkPNrfLYP4bLPrlxb9kxYSEYPJ%2B%2BwRqGnTwQak%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=mwV%2F7BSfDfmwOHJbNo2wAMPdWiJKilKcwZ1aA2V3Np5XNVrNO1tjhHGGWdWtbgFSlTE%2F5e%2FUPhHzNEEi9QagoqP291Ho6IBle%2FuMoD0zJq6s4Fok8Uf467pwXAvS8qgtCuElAtmQYLfd2qG3X8SiVdlNq%2BI%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7503bc361e700f7a-MXP
+CF-RAY: 75258360be513758-MXP
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
     "success": true,
     "user": {
-        "email": "a361@ya.ru",
+        "email": "56@ya.ru",
         "name": "Anna"
     },
-    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzA0ODZhYzE2MWRhMDAxYjc2OGY2NiIsImlhdCI6MTY2NDEwODY1MCwiZXhwIjoxNjY0MTA5ODUwfQ.5yFThpTMM39VOYIRpQx_QBnOqxPLMMtrL4dj2hY5GEE",
-    "refreshToken": "0ddc457244a8c25b59b49752384dac0ab69efc5112637413d407e9b90ab452e8b9485af5ce47929d"
+    "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzVhZmY2YzE2MWRhMDAxYjc2YWE5YiIsImlhdCI6MTY2NDQ2MjgzOCwiZXhwIjoxNjY0NDY0MDM4fQ.GYAFuW2Jh2BzmkI7hbNBwXkboBNU2MuigS8cYYK7W98",
+    "refreshToken": "909fb742289b826eb6cbcaa97bee1fd764a580c213a1fd4e6dbce8e841eae52215ede21e09a3999b"
 }
 Request method:	GET
 Request URI:	https://stellarburgers.nomoreparties.site/api/auth/user
@@ -119,32 +119,32 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzA0ODZhYzE2MWRhMDAxYjc2OGY2NiIsImlhdCI6MTY2NDEwODY1MCwiZXhwIjoxNjY0MTA5ODUwfQ.5yFThpTMM39VOYIRpQx_QBnOqxPLMMtrL4dj2hY5GEE
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzVhZmY2YzE2MWRhMDAxYjc2YWE5YiIsImlhdCI6MTY2NDQ2MjgzOCwiZXhwIjoxNjY0NDY0MDM4fQ.GYAFuW2Jh2BzmkI7hbNBwXkboBNU2MuigS8cYYK7W98
 				Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Sun, 25 Sep 2022 12:24:10 GMT
+Date: Thu, 29 Sep 2022 14:47:18 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"3c-ZzLbZTw9sWa/5K1P/oIbcM7ShtQ"
+ETag: W/"3a-HtpA77eCXO6yILk2ocLMXZ6EcbY"
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LiKl2pTduo03ZgaIur%2Fp16WWKTf4EJYhe5tCa948FjDOI8bnG3G3DczUXq5uT2UcpiyKJ0xVzZKvNFkQEB1ZqAQrTL%2FR32gxlb9tuOLhGAWySFOXmNxyR%2FKocJgXGHwrhwi%2BRQD5Ltf%2BL%2BVOytWJIL%2BIMgY%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=IxpEW4%2BD4BGiOZai%2FHbpB6YRwEduECrhkFDnEFQHfLMwJteXTXywyaATyboOCr167WhJs2A8FV6%2BX9qhxMSdIkNCazeEyTD5zEHJH1%2FJXlcQ4ytDO1OpFWfbce%2BsSL%2FbkXD7Hp3Cp1Irk8QXbUXzH2PnG9I%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7503bc3a1e44bacd-MXP
+CF-RAY: 7525836559eb5995-MXP
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
     "success": true,
     "user": {
-        "email": "a361@ya.ru",
+        "email": "56@ya.ru",
         "name": "Anna"
     }
 }
@@ -155,16 +155,16 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzA0ODZhYzE2MWRhMDAxYjc2OGY2NiIsImlhdCI6MTY2NDEwODY1MCwiZXhwIjoxNjY0MTA5ODUwfQ.5yFThpTMM39VOYIRpQx_QBnOqxPLMMtrL4dj2hY5GEE
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzVhZmY2YzE2MWRhMDAxYjc2YWE5YiIsImlhdCI6MTY2NDQ2MjgzOCwiZXhwIjoxNjY0NDY0MDM4fQ.GYAFuW2Jh2BzmkI7hbNBwXkboBNU2MuigS8cYYK7W98
 				Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "email": "467a361@ya.ru",
+    "email": "26356@ya.ru",
     "password": "12345",
-    "name": "Anna30",
+    "name": "Anna21",
     "success": null,
     "user": null,
     "accessToken": null,
@@ -172,26 +172,26 @@ Body:
     "message": null
 }
 HTTP/1.1 200 OK
-Date: Sun, 25 Sep 2022 12:24:11 GMT
+Date: Thu, 29 Sep 2022 14:47:19 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
 X-Powered-By: Express
 Access-Control-Allow-Origin: *
-ETag: W/"41-BD2MaO8VO5rQD9ZQx8QZ64pfZMc"
+ETag: W/"3f-m9P2neOnsfTvVIZA4rnf+Y+T+yU"
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=gW2YA8CI6%2FJ6gnxvvrX2xpt8XxRqiFbYIptM1YqSklpQTEaJeOh8oNBr%2BXkz8L6AKD5O05fFYOUOKqHhj5a4soSeCaNMBfT0NUc3fx044fXMjMD4mPERSLNHW1fZMpq7Fg6vLR8BTBiorb%2BjbnOTFOrXunY%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bpI7iQTMr0IzqezXZ8qS9r%2FAaNxNGpWqbPy06A4mEQ7VlFnN2E6upyQ2nyXBXoE7IaStUPwcQOjCikrR%2B8uVgMUQfkkuYkK4az%2F23sl5su5c8h3i7nbmiRMOi0bZ657VehHO8gBM0ZsUrJXlhA2x2iEAqyc%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7503bc3c5c5d375b-MXP
+CF-RAY: 75258367d8160dfe-MXP
 Content-Encoding: gzip
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {
     "success": true,
     "user": {
-        "email": "467a361@ya.ru",
-        "name": "Anna30"
+        "email": "26356@ya.ru",
+        "name": "Anna21"
     }
 }
 Request method:	DELETE
@@ -201,14 +201,14 @@ Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzA0ODZhYzE2MWRhMDAxYjc2OGY2NiIsImlhdCI6MTY2NDEwODY1MCwiZXhwIjoxNjY0MTA5ODUwfQ.5yFThpTMM39VOYIRpQx_QBnOqxPLMMtrL4dj2hY5GEE
+Headers:		Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzVhZmY2YzE2MWRhMDAxYjc2YWE5YiIsImlhdCI6MTY2NDQ2MjgzOCwiZXhwIjoxNjY0NDY0MDM4fQ.GYAFuW2Jh2BzmkI7hbNBwXkboBNU2MuigS8cYYK7W98
 				Accept=application/json, application/javascript, text/javascript, text/json
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 202 Accepted
-Date: Sun, 25 Sep 2022 12:24:11 GMT
+Date: Thu, 29 Sep 2022 14:47:19 GMT
 Content-Type: application/json; charset=utf-8
 Content-Length: 54
 Connection: keep-alive
@@ -216,10 +216,10 @@ X-Powered-By: Express
 Access-Control-Allow-Origin: *
 ETag: W/"36-hDmZnQ3Ou/ynnqAeC6TYmyseuzY"
 CF-Cache-Status: DYNAMIC
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=o6lZmms7izSJTXVgyuZs%2FQUZImFCUcZrNyLq2RiXBcXCYP5YopF2mf%2B0c1g0LLDB18DJC%2F%2B2%2BbNMB0PBHmqu%2FiXFCk3SGnQITgRr11ozKTvXqeZi0JJp5jeN45oUqdsi7R%2FDEI3SkXWh6RhpttJdW0ey%2Fkc%3D"}],"group":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kyZ%2F%2Bx%2FWUQNI778X1fma1kAwVN%2Fu3QA6ZigEq%2F%2F9x0Wk2HlXs5J%2Fb0gABjQX3ycSzUFN4QUJerczXeHuTvXNiGzjXzkEvCdPlBp19F6o1axsc4n74JGD49gWYvmfAl4Z2GUb66ck4GaSd18y%2BmGEMvUOmd0%3D"}],"group":"cf-nel","max_age":604800}
 NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 Server: cloudflare
-CF-RAY: 7503bc3fbe3459ef-MXP
+CF-RAY: 7525836b6bb80f52-MXP
 alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
 
 {

@@ -2,32 +2,43 @@ package site.nomoreparties.stellarburgers;
 
 import io.qameta.allure.Issue;
 import io.qameta.allure.junit4.DisplayName;
-import io.restassured.http.ContentType;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import site.nomoreparties.stellarburgers.pojo.Client.ApiClient;
 import site.nomoreparties.stellarburgers.pojo.Model.OrderData;
 import site.nomoreparties.stellarburgers.pojo.Model.UserData;
-
 import java.util.List;
 import java.util.Random;
 
 public class CreateOrderTest {
     private ApiClient client;
     private UserData userData;
+    private  UserData responseRegistration;
 
     @Before
     public void setUp() {
         client = new ApiClient();
-        //объявить данные для регистрации
-        String email = "a" + new Random().nextInt(500) + "@ya.ru";
-        String name = "Anna";
+        //сгенерировать данные для регистрации
+        String email = new Random().nextInt(100) + "@mail.ru";
+        String name = new Random().nextInt(100) + "Mia";
         String password = "12345";
         //объявить данные пользователя
         userData = new UserData(email, password, name, null, null, null, null, null);
         //зарегистрироваться
-        client.createRegistration(userData);
+        responseRegistration = client.createRegistration(userData).then().extract().as(UserData.class);
+    }
+
+    @After
+    public void deleteUser() {
+        //если пользователь был создан
+        if(responseRegistration.getAccessToken() != null) {
+            //получить токен пользователя, сгенерированный при регистрации
+            String accessToken = responseRegistration.getAccessToken();
+            //удалить пользователя
+            client.deleteUser(accessToken);
+        }
     }
 
     @Test
@@ -63,11 +74,9 @@ public class CreateOrderTest {
         //передать невалидный хеш-код ингредиента для добавления в заказ
         OrderData ingredientsOfNewOrder = new OrderData(List.of(orderData.getData().get(0).get_id().replace("61c0c5a71d1f82001bdaaa6d", "Myid")), null, null, null, null, null, List.of());
         //создать заказ с выбранными ингредиентами
-        OrderData responseOfCreateOrder = client.createOrder(ingredientsOfNewOrder)
+        client.createOrder(ingredientsOfNewOrder)
                 .then()
-                .statusCode(500)
-                .contentType(ContentType.ANY.withCharset("utf-8"))
-                .extract().as(OrderData.class);
+                .statusCode(500);
     }
 
     @Test

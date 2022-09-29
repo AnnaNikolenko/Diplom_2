@@ -8,7 +8,6 @@ import org.junit.Before;
 import org.junit.Test;
 import site.nomoreparties.stellarburgers.pojo.Client.ApiClient;
 import site.nomoreparties.stellarburgers.pojo.Model.UserData;
-
 import java.util.Random;
 
 public class UpdateUserDataAfterAuthorizationTest {
@@ -17,36 +16,44 @@ public class UpdateUserDataAfterAuthorizationTest {
     private String email;
     private String name;
     private String password;
+    private  UserData responseRegistration;
+    private UserData responseAuthorization;
     private String accessToken;
 
     @Before
     public void setUp() {
         client = new ApiClient();
         //объявить данные для регистрации
-        email = "a" + new Random().nextInt(500) + "@ya.ru";
-        name = "Anna";
+        email = new Random().nextInt(500) + "@mail.ru";
+        name = new Random().nextInt(500) + "Anna";
         password = "12345";
         //создать юзера
         userData = new UserData(email, password, name, null, null, null, null, null);
         //зарегистрировать юзера
-        client.createRegistration(userData);
+        responseRegistration = client.createRegistration(userData).then().extract().as(UserData.class);
         //авторизоваться
-        final UserData responseAuthorization = client.createAuthorization(userData)
+        responseAuthorization = client.createAuthorization(userData)
                 .then()
                 .extract().as(UserData.class);
         //получить аксесс токен, сгенерированный при авторизации
         accessToken = responseAuthorization.getAccessToken();
         //получить с сервера данные пользователя, используя токен
-        final UserData userDataGotByToken = client.getUserDataByAccessToken(accessToken)
+        final UserData userDataAfterAuthorization = client.getUserDataByAccessToken(accessToken)
                 .then()
                 .extract().as(UserData.class);
-        name = userDataGotByToken.getUser().getName();
-        email = userDataGotByToken.getUser().getEmail();
+        name = userDataAfterAuthorization.getUser().getName();
+        email = userDataAfterAuthorization.getUser().getEmail();
     }
 
     @After
     public void deleteUser() {
-        client.deleteUser(accessToken);
+        //если пользователь был создан
+        if(responseRegistration.getAccessToken() != null) {
+            //получить токен пользователя, сгенерированный при регистрации
+            String accessToken = responseRegistration.getAccessToken();
+            //удалить пользователя
+            client.deleteUser(accessToken);
+        }
     }
 
     @Test
@@ -103,7 +110,7 @@ public class UpdateUserDataAfterAuthorizationTest {
         //объявить данные пользователя
         userData = new UserData(email, password, name, null, null, null, null, null);
         //обновить данные (должна быть ошибка, тк этот емейл уже зарегистрирован в системе))
-        final UserData responseOfUpdatedData = client.updateUserData(accessToken, userData)
+        final UserData responseOfUpdatedData = client.updateUserData2(accessToken, userData)
                 .then()
                 .statusCode(403)
                 .extract().as(UserData.class);
